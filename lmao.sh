@@ -2,7 +2,7 @@
 oldestfile=$(ls -1t '/home/rye/Pictures/Screenshots/' | tail -n 1)
 filecount=$(ls -1 | wc -l) - 1
 
-if [$filecount <= 10]; then
+if [$filecount -le 10]; then
 	rm -f $oldestfile
 fi
 
