@@ -2,8 +2,8 @@
 oldestfile=$(ls -1t '/home/rye/Pictures/Screenshots/' | tail -n 1)
 filecount=$(($(ls -1 | wc -l) -1))
 
-if [$filecount -le 10]; then
-	rm -f $oldestfile
+if [ $filecount -le 10 ]; then
+  rm -f "$oldestfile"
 fi
 
 fname=$(ls -1t '/home/rye/Pictures/Screenshots/' | head -n 1)
