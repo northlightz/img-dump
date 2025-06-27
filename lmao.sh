@@ -7,5 +7,5 @@ git commit -m "feat: ${fname}"
 git push
 
 sleep 5
-
-echo "https://raw.githubusercontent.com/northlightz/img-dump/refs/heads/main/${fname}" | wl-copy
+urlfname=$(printf "${fname}" | jq -sRr @uri)
+echo "https://raw.githubusercontent.com/northlightz/img-dump/refs/heads/main/${urlfname}" | wl-copy
