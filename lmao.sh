@@ -8,4 +8,4 @@ git push
 
 sleep 5
 
-echo "https://raw.githubusercontent.com/northlightz/img-dump/refs/heads/main/${fname}"
+echo "https://raw.githubusercontent.com/northlightz/img-dump/refs/heads/main/${fname}" | wl-copy
